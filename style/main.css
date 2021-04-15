@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+:root {
+    --primary:#134681;
+    --text: rgb(218, 218, 218) ;
+    --btn:#ff4f4f;
+    --muted: grey;
+}
+
+.close {
+    font-size: 26px;
+    padding: 0.5em;
+    cursor: pointer;
+}
+.close:hover {
+    transition:1s ease-in-out ;
+    font-size: 28px;
+    
+}
+.action {
+    color: var(--muted);
+}
+
+.child {
+    line-height: 1.7;
+    text-align: center;
+}
+.child > button {
+    color: red;
+}
+h2 {
+    cursor: pointer;
+}
+.right ul li {
+    padding: 0.5em;
+}
+button {
+    cursor: pointer;
+}
+.footer {
+    padding: 4em 5em;
+    position: absolute;
+    bottom: -40em;
+    color: var(--text);
+}
+.btn {
+    padding: 1em 1.5em;
+    outline: none;
+    border: 1px solid blue;
+    color: blue;
+    background-color: white;
+   margin-top: 2em;
+}
+.float-head {
+    margin-bottom: 1em;
+}
+.boats {
+    padding: 4em;
+}
+.boat-details {
+    display: flex;
+}
+.boats .boat-details > p{
+    line-height: 1.5;
+  
+}
+.inner_top {
+   padding-bottom: 4em;
+}
+.inner_top button {
+    color: rebeccapurple;
+}
+ul{
+    list-style-type: none;
+}
+.btn-white {
+    margin-top: 6em;
+    
+}
+
+.muted {
+    color: var(--muted);
+}
+body {
+    background-color: var(--primary);
+}
+.second_box {
+   max-width: 95%;
+   display: flex;
+   color: white;
+   
+}
+.up:hover {
+    background-color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+.down:hover {
+    background-color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+.detail {
+    color: rgb(202, 202, 202);
+    padding-top: 1.5em;
+}
+ 
+.pri {
+    color: white;
+    background-color: blue;
+    outline: none;
+    border: none;
+    padding: 1.5em 2em;
+    float:right;
+    margin-top: 1em;
+}
+.text-area {
+    width: 100%;
+}
+/* general syntax  */
+header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 2em;
+}
+.pad {
+    padding: 1em;
+}
+/* style for the box */
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .first_box, .box .second_box {
+   
+    padding: 1em;
+
+}
+.box1 > div{
+    border: 1px solid white;
+}
+.box2 > div{
+    border: 1px solid white;
+}
+.box .up {
+    padding: 1em;
+}
+.box .down {
+    padding: 1em ;
+   
+}
+
+.box .first_box {
+    margin-right: 1em;
+    background-color: white;
+    border: none;
+    color: var(--muted);
+    
+}
+.box .first_box span button  {
+    padding: 1.5em;
+    border: 1px solid blue;
+    background: none;
+    outline: none;
+    color: var(--muted);
+}
+.box .first_box span button:hover {
+    background-color: var(--primary);
+    color: white;
+    transition: 1.5s;
+}
+/* for the price */
+.price {
+    display: flex;
+}
+
+.price .price_white {
+    background: white;
+    padding: 1em;
+    width: 50em;
+    max-width: 55em;
+    margin-right: 1em;
+}
+.price .price_white .inner_top {
+    display: flex;
+    justify-content: space-between;
+}
+.price .price_white .inner_top button {
+    background: var(--btn);
+    border: none;
+    color: white;
+    padding:   0.5em 2em;
+    outline: none;
+}
+/* 
+style for the second part */
+.boats {
+    color: var(--muted);
+}
+
+section {
+    height: 100vh;
+   
+}
+.line {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--muted);
+    outline: none;
+    width: 100%;
+    margin-top: 2em;
+}
+.section {
+    padding-left: 2em;
+    
+}
+/* for mobile view  */
+@media screen and (max-width:750px) {
+    .price {
+        background-color: white;
+    }
+    .mobile-show {
+        
+        margin-top: 5em;
+        padding-top: 1em;
+        text-align: center;
+        padding-bottom: 2em;
+    }
+    .mobile-hide {
+        display: none;
+    }
+    .hide {
+        display: none;
+    }
+    /* the section aspect */
+    .section {
+        margin-top: 15em;
+        padding-left: 0;
+        background-color: white;
+        position: relative;
+        padding-top: 1m;
+        margin-top: 10em;
+      
+        
+    }
+    /* hide the ul in the header */
+    header ul {
+        display: none;
+    }
+    .btn-white {
+        float: right;
+    }
+    .container {
+        padding: 1em 1.5em;
+        margin-bottom: 2em;
+
+    }
+    button {
+        cursor: pointer;
+    }
+    .section {
+        
+        
+    }
+    /* for the sidebar stylings */
+    .sidebar {
+        background-color:#134681f6;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        color: white;
+        text-transform: uppercased;
+        display: none;
+        transition: 1.5s;
+    }
+    .sidebar ul{
+        padding-top: 4em;
+    }
+    .sidebar ul li {
+        padding: 2em;
+
+    }
+
+    /* style the box for mobile phone */
+    .box{
+        flex-wrap: wrap;
+    }
+    .box .first_box {
+        margin-bottom: 1em;
+    }
+    /* the price styling */
+    .price {
+        flex-wrap: wrap-reverse;
+    }
+
+    .price .price_white {
+        margin-top: 1em;
+    }
+    label {
+        color: var(--muted);
+    }
+   
+    label::after {
+        content: '*';
+        color: var(--btn);
+       
+    }
+    form button{
+        float: right;
+        padding: 1em 2em;
+    }
+    .icon {
+        color: white;
+    }
+    .icon:hover {
+        transition: 2s ease-in-out;
+        font-size: 29px;
+    }
+
+    /* for the half part of the page */
+    .section-inner {
+        
+        padding: 0 !important;
+        margin: 0  !important ;
+        
+    }
+}
+
+/* for the desktop version */
+@media screen and (min-width:750px ) {
+    .hot {
+        margin-bottom: 4em;
+    }
+    .anti-desktop {
+        display: none;
+    }
+    .boats {
+        padding: 6em;
+        color: white;
+    }
+    /* for the side bar on desktop */
+    .sidebar,.icon {
+        display: none;
+    }
+    .container {
+        padding: 1em 2em;
+    }
+    /* box styling for desktop */
+    .box {
+        margin-top: 5em;
+    }
+    .box .first_box, .box .second_box{
+        height: 20em;
+    }
+
+    /* style the boxes */
+    .box .up {
+        padding: 3em 2em ;
+    }
+
+    
+    .box .down {
+        padding: 3em 2em ;
+    }
+
+    .btn-white {
+        margin-top: 13em;
+    }
+
+    /* the whit box style */
+    .box .first_box{
+        max-width: 55%;
+        height: 90%;
+    }
+    
+    .btn {
+        padding: 1em 2.5em;
+        outline: none;
+        border: 1px solid white;
+        color: white;
+        background-color: transparent;
+       margin-top: 2em;
+    }
+
+    .price_float {
+        padding: 1em 5em ;
+
+    }
+    .mobile-show {
+        display: none;
+    }
+}
+
+@media screen and (max-width:400px ){
+    .section {
+        margin-top: 25em
+    }
